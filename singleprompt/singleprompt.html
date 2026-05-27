@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Space Runner</title>
+    <link rel="stylesheet" href="t.css">
+</head>
+<body>
+    <div id="startScreen">
+        <div id="highscore">Highscore: <span id="highscoreValue">0</span></div>
+        <button id="startButton">Start</button>
+        <div id="instructions">
+            <strong>Instructions:</strong><br>
+            - Space: Jump<br>
+            - S: Roll Down<br>
+            - A: Move Left<br>
+            - D: Move Right<br>
+            <br>
+            Dodge planets by jumping, rolling, or moving sideways.<br>
+            Survive as long as you can!<br>
+            Score increases every millisecond.<br>
+            <span style="color:gold;">Rare stars grant 20s immunity!</span>
+        </div>
+    </div>
+    <div id="gameOverScreen" style="display:none;">
+        <div id="newHighscore">NEW HIGHSCORE!</div>
+        <div id="finalScore"></div>
+        <div id="finalHighscore"></div>
+        <button id="playAgainButton">Play Again</button>
+    </div>
+    <canvas id="gameCanvas" width="600" height="800"></canvas>
+    <div id="scoreDisplay" style="display:none;">Score: 0</div>
+    <audio id="yaySound" src="https://www.myinstants.com/media/sounds/fnaf-yay-children-61698.mp3"></audio>
+    <audio id="fartSound" src="https://www.myinstants.com/media/sounds/fart.mp3"></audio>
+    <script src="t.js"></script>
+</body>
+</html>
